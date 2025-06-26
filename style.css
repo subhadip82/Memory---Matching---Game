@@ -146,9 +146,9 @@ button {
 }
 button:hover{
      background-color: #2ecc71;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-
+ box-shadow: 0 0 5px rgb(0, 255, 8),
+    0 0 25px rgb(0, 255, 85), 0 0 50px rgb(0, 255, 76),
+    0 0 100px rgb(47, 255, 0), 0 0 200px rgb(0, 255, 8)
 }
 .button:active {
   transform: scale(0.98);
@@ -181,8 +181,7 @@ body {
 
 /* Exit button hover */
 #exitBtn:hover {
-  background-color: #c0392b;
-}
-#window.onload {
-    background-image: url(https://t3.ftcdn.net/jpg/12/92/16/88/360_F_1292168825_d8Mi83I035uY10krUM5o6MgNFbS9xu8q.jpg);
+    box-shadow: 0 0 5px rgb(0, 255, 8),
+    0 0 25px rgb(0, 255, 85), 0 0 50px rgb(0, 255, 76),
+    0 0 100px rgb(47, 255, 0), 0 0 200px rgb(0, 255, 8)
 }
