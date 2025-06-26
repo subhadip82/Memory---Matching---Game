@@ -23,7 +23,10 @@ function init() {
 
 //Showing instructions
 window.onload = function() {
-    $("#ol").html(`<center><div id="inst"><h3>Welcome !</h3>Instructions For Game<br/><br/><li>Make pairs of similiar blocks by flipping them.</li><li>To flip a block you can click on it.</li><li>If two blocks you clicked are not similar, they will be flipped back.</li><p style="font-size:18px;">Click one of the following mode to start the game.</p></div><button onclick="start(3, 4)">3 x 4</button> <button onclick="start(4, 4)" style="w">4 x 4</button><button onclick="start(4, 5)">4 x 5</button><button onclick="start(5, 6)">5 x 6</button><button onclick="start(6, 6)">6 x 6</button></center>`);
+    document.body.style.backgroundImage = "url('https://t3.ftcdn.net/jpg/08/69/44/04/360_F_869440451_RHbCQX5E0UpRxIkt4smNSxp7WqktKPlq.jpg')";
+    document.body.style.backgroundSize = "cover"; // Optional: Makes image cover the whole screen
+
+    $("#ol").html(`<center><div id="inst"><h3>Welcome </h3>Instructions For Game<br/><br/><li>Make pairs of similiar blocks by flipping them.</li><li>To flip a block you can click on it.</li><li>If two blocks you clicked are not similar, they will be flipped back.</li><p style="font-size:18px;">Click one of the following mode to start the game.</p></div><button onclick="start(3, 4)">3 x 4</button> <button onclick="start(4, 4)" style="w">4 x 4</button><button onclick="start(4, 5)">4 x 5</button><button onclick="start(5, 6)">5 x 6</button><button onclick="start(6, 6)">6 x 6</button></center>`);
 }
 
 //Starting the game
@@ -137,4 +140,9 @@ function change(x) {
           }, 1500);
     }
   }
+}
+
+function exitGame() {
+  clearInterval(time);
+  location.reload(); // reloads page
 }
